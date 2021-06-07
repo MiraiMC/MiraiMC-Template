@@ -2,3 +2,4 @@ name: MyPlugin
 main: com.example.demo.main
 version: 1.0
 author: DreamVoid
+depend: [MiraiMC]
