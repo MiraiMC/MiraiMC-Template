@@ -3,6 +3,9 @@ package com.example.demo;
 import me.dreamvoid.miraimc.api.MiraiBot;
 import me.dreamvoid.miraimc.listener.MiraiFriendMessageEvent;
 import me.dreamvoid.miraimc.listener.MiraiGroupMessageEvent;
+import net.mamoe.mirai.message.data.At;
+import net.mamoe.mirai.message.data.MessageChain;
+import net.mamoe.mirai.message.data.MessageChainBuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -33,8 +36,9 @@ public class main extends JavaPlugin implements Listener {
     @EventHandler
     public void onGroupMessageReceive(MiraiGroupMessageEvent e){
         getLogger().info("接收到群聊"+e.getGroupID()+"的消息: "+e.getMessage());
-        mirai.sendFriendMessage(e.getBotID(),e.getSenderID(),mirai.at(e.getSenderID())+" 你发送了一条消息："+e.getMessage());
+
+        // [!] 未来可能移除Mirai的消息链改为插件提供的消息链，因此请勿过分依赖消息链
+        MessageChain chain = new MessageChainBuilder().append(new At(e.getSenderID())).append(" 你发送了一条消息：").append(e.getMessage()).build();
+        mirai.sendFriendMessage(e.getBotID(),e.getSenderID(), chain);
     }
-
-
 }
