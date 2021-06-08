@@ -27,7 +27,8 @@
         <dependency>
             <groupId>io.github.dreamvoid</groupId>
             <artifactId>MiraiMC</artifactId>
-            <version>1.1-rc3</version><!--版本可能随时更新，请注意使用最新版本 -->
+            <!--请确保版本为Github上的最新版本-->
+            <version>1.1-rc4</version>
         </dependency>
     </dependencies>
 
