@@ -17,7 +17,7 @@ public class commandexample extends JavaPlugin implements Listener {
 
     @Override // 启用插件
     public void onEnable() {
-        this.mirai=new MiraiBot();
+        this.mirai = MiraiBot.getInstance();
         Bukkit.getPluginManager().registerEvents(this, this);
     }
 
