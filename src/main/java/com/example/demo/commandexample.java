@@ -1,8 +1,8 @@
 package com.example.demo;
 
 import me.dreamvoid.miraimc.api.MiraiBot;
-import me.dreamvoid.miraimc.listener.MiraiFriendMessageEvent;
-import me.dreamvoid.miraimc.listener.MiraiGroupMessageEvent;
+import me.dreamvoid.miraimc.event.MiraiFriendMessageEvent;
+import me.dreamvoid.miraimc.event.MiraiGroupMessageEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -17,7 +17,7 @@ public class commandexample extends JavaPlugin implements Listener {
 
     @Override // 启用插件
     public void onEnable() {
-        this.mirai = MiraiBot.getInstance();
+        this.mirai = MiraiBot.Instance;
         Bukkit.getPluginManager().registerEvents(this, this);
     }
 

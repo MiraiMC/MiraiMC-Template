@@ -1,8 +1,8 @@
 package com.example.demo;
 
 import me.dreamvoid.miraimc.api.MiraiBot;
-import me.dreamvoid.miraimc.listener.MiraiFriendMessageEvent;
-import me.dreamvoid.miraimc.listener.MiraiGroupMessageEvent;
+import me.dreamvoid.miraimc.event.MiraiFriendMessageEvent;
+import me.dreamvoid.miraimc.event.MiraiGroupMessageEvent;
 import net.mamoe.mirai.message.data.At;
 import net.mamoe.mirai.message.data.MessageChain;
 import net.mamoe.mirai.message.data.MessageChainBuilder;
@@ -20,7 +20,7 @@ public class main extends JavaPlugin implements Listener {
 
     @Override // 启用插件
     public void onEnable() {
-        this.mirai = MiraiBot.getInstance();
+        this.mirai = MiraiBot.Instance;
         Bukkit.getPluginManager().registerEvents(this, this);
     }
 
