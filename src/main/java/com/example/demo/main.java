@@ -1,8 +1,8 @@
 package com.example.demo;
 
 import me.dreamvoid.miraimc.api.MiraiBot;
-import me.dreamvoid.miraimc.event.MiraiFriendMessageEvent;
-import me.dreamvoid.miraimc.event.MiraiGroupMessageEvent;
+import me.dreamvoid.miraimc.bukkit.event.MiraiFriendMessageEvent;
+import me.dreamvoid.miraimc.bukkit.event.MiraiGroupMessageEvent;
 import net.mamoe.mirai.message.data.At;
 import net.mamoe.mirai.message.data.MessageChain;
 import net.mamoe.mirai.message.data.MessageChainBuilder;
