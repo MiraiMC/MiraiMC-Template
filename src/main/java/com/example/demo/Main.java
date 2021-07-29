@@ -11,7 +11,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class main extends JavaPlugin implements Listener {
+public class Main extends JavaPlugin implements Listener {
     @Override // 加载插件
     public void onLoad() { }
 
