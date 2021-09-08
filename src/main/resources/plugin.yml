@@ -3,4 +3,5 @@ main: com.example.demo.Main
 version: 1.0
 author: DreamVoid
 api-version: 1.16
-depend: [MiraiMC]
+depend:
+  - MiraiMC
