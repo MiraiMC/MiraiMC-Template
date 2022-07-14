@@ -1,8 +1,8 @@
 package com.example.demo;
 
 import me.dreamvoid.miraimc.api.MiraiBot;
-import me.dreamvoid.miraimc.bukkit.event.message.passive.MiraiFriendMessageEvent;
-import me.dreamvoid.miraimc.bukkit.event.message.passive.MiraiGroupMessageEvent;
+import me.dreamvoid.miraimc.bukkit.event.MiraiFriendMessageEvent;
+import me.dreamvoid.miraimc.bukkit.event.MiraiGroupMessageEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
